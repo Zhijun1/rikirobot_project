@@ -1,0 +1,12 @@
+<launch>
+  <node pkg="rikirobot_apps" name="object_tracker" type="object_tracker.py" output="screen">
+    <remap from="camera_info" to="/camera/rgb/camera_info" />
+    <rosparam>
+       rate: 4
+       max_rotation_speed: 0.1
+       min_rotation_speed: 0.1
+       x_threshold: 0.4
+       gain: 0.2
+    </rosparam>
+  </node>
+</launch>
