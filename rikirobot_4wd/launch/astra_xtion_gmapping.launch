@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find rikirobot_4wd)/param/astra_pro.xml"/> 
+  <include file="$(find rikirobot_4wd)/param/astra_laser.xml"/> 
+  <include file="$(find rikirobot_4wd)/param/slam_gmapping.xml"/> 
+  <include file="$(find rikirobot_4wd)/param/move_base.xml"/>
+</launch>

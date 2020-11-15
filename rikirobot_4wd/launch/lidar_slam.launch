@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find rplidar_ros)/launch/rplidar.launch" />
+  <include file="$(find rikirobot_4wd)/param/slam_gmapping.xml" />
+  <include file="$(find rikirobot_4wd)/param/move_base.xml" />
+</launch>
