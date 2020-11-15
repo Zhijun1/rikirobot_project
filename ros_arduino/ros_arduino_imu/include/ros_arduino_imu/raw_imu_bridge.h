@@ -42,7 +42,7 @@ class RawImuBridge
     bool use_accelerometer_, use_gyroscope_, use_magnetometer_;
     bool use_mag_msg_;
 
-    static const double GRAVITY = -9.81;  // [m/s/s]
+    static constexpr double GRAVITY = -9.81;  // [m/s/s]
     bool perform_calibration_, is_calibrated_;
     int calibration_samples_;
     std::map<std::string,double> acceleration_bias_, gyroscope_bias_;
@@ -57,7 +57,7 @@ class RawImuBridge
     double mag_x_min_, mag_x_max_;  //  [T]
     double mag_y_min_, mag_y_max_;
     double mag_z_min_, mag_z_max_;
-    static const double MILIGAUSS_TO_TESLA_SCALE = 0.0000001;  // From Milligauss [mG] to Tesla [T]
+    static constexpr double MILIGAUSS_TO_TESLA_SCALE = 0.0000001;  // From Milligauss [mG] to Tesla [T]
 
     // ROS pub/sub
     ros::Publisher imu_pub_;
