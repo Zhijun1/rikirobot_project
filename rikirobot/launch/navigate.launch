@@ -1,0 +1,9 @@
+<launch>
+  <include file="$(find rplidar_ros)/launch/rplidar.launch" />
+
+  <arg name="map_file" default="$(find rikirobot)/maps/house.yaml"/>
+  <node pkg="map_server" name="map_server"  type="map_server" args="$(arg map_file)" />
+
+  <include file="$(find rikirobot)/launch/amcl.launch" />
+  <include file="$(find rikirobot)/param/move_base.xml" />
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find rikirobot)/param/slam_gmapping.xml" />
+  <include file="$(find rikirobot)/param/move_base.xml" />
+</launch>

@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find rikirobot)/param/xtion_fake_laser_openni2.xml"/>
+  <include file="$(find rikirobot)/param/slam_gmapping.xml"/> 
+  <include file="$(find rikirobot)/param/move_base.xml"/>
+</launch>
