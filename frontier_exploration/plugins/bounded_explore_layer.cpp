@@ -9,6 +9,8 @@
 #include <pcl/point_cloud.h>
 #include <pcl/point_types.h>
 #include <boost/foreach.hpp>
+#include <geometry_msgs/PointStamped.h>
+#include <tf/tf.h>
 
 #include <frontier_exploration/Frontier.h>
 #include <frontier_exploration/UpdateBoundaryPolygon.h>
